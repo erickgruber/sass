@@ -1,0 +1,75 @@
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+.nav {
+    background-color: lighten($color-primary, 20%);
+    ul li {
+        list-style: none;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $color-secondary;
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+}
+
+
+/*@mixin headingStyles($fontSize) {
+    font-size: $fontSize;
+    color: $color-secondary;
+    text-align: center;
+}*/
+
+// Using mixins with properties
+
+/*@mixin transition($param...) {
+    transition: $param;
+}*/
+
+%heading {
+    color: $color-primary;
+    font-size: $font-lg;
+    text-align: center;
+}
+
+
+/*@function fontSize($size) {
+    @return $size * 2;
+}*/
+
+h1 {
+    //$color-secondary: red;
+    //$color-secondary: red !global;
+    //font-size: $font-lg;
+    //@include headingStyles($font-lg);
+    //@extend .heading;
+    &:hover {
+        background-color: green;
+    }
+}
+
+.footer h3 {
+    //font-size: $font-md;
+    //@include headingStyles($font-md);
+    //@include transition(color .5s, background-color 1s);
+    //&:hover {
+    //    color: $color-tertiary;
+    //    background-color: $color-primary;
+    //}
+    @extend h1;
+    &:hover {
+        background-color: green;
+    }
+}
+
+
+/*.banner p {
+    font-size: fontSize($font-sm);
+}*/

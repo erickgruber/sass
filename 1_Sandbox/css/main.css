@@ -1,0 +1,38 @@
+/* line 7, scss/main.scss */
+.nav {
+  background-color: #ffc966; }
+  /* line 9, scss/main.scss */
+  .nav ul li {
+    list-style: none;
+    cursor: pointer; }
+  /* line 13, scss/main.scss */
+  .nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: gray; }
+    /* line 17, scss/main.scss */
+    .nav a:hover {
+      color: royalblue; }
+
+/*@mixin headingStyles($fontSize) {
+    font-size: $fontSize;
+    color: $color-secondary;
+    text-align: center;
+}*/
+/*@mixin transition($param...) {
+    transition: $param;
+}*/
+/*@function fontSize($size) {
+    @return $size * 2;
+}*/
+/* line 53, scss/main.scss */
+h1:hover, .footer h3:hover {
+  background-color: green; }
+
+/* line 67, scss/main.scss */
+.footer h3:hover {
+  background-color: green; }
+
+/*.banner p {
+    font-size: fontSize($font-sm);
+}*/
