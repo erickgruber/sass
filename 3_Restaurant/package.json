@@ -1,0 +1,12 @@
+{
+    "name": "3_Restaurant",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch": "node-sass -o css scss/main.scss -watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
